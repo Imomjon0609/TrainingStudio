@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --orange-color: #ed563b;
+    --p-color:#7a7a7a;
+    --link-color:#007bff;
+}
+header{
+    background-image: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    
+    
+}
+nav > h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+nav > h1 > span{
+    color:var(--orange-color);
+}
+nav > ul{
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 3rem; 
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    align-items: center;
+}
+nav > ul > li:nth-child(1){
+    color: var(--orange-color);
+    font-weight: 400;
+    cursor: pointer;
+}
+nav > ul > li{
+    cursor: pointer;
+    transition: 0.3s all;
+}
+nav > ul > li:hover{
+    color: var(--orange-color);
+}
+nav > ul > button{
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition: 0.3s all;
+    color: white;
+    background-color: #ed563b;
+    border: none;
+}
+nav > ul > button:hover{
+    color: #fd7e14;
+}
+.barsContainer{
+    display: none;
+}
+main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70%;
+        color: white;
+}
+.header_container{
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
+ height: 100%;
+   
+}
+main > h3{
+    font-size: 1rem;
+    font-weight: 900;
+    
+}
+main > h1{
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 1rem;
+    text-align: center;
+}
+main > button{
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    background-color: var(--orange-color);
+    color: white;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+main > button:hover{
+   opacity: 0.8;
+}
+
+.text_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   margin-bottom: 2rem;
+   margin: 2rem;
+}
+.text_container > h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.text_container > p{
+    margin-top: 1rem;
+    color: var(--p-color);
+    max-width: 550px;
+    text-align: center;
+}
+
+.article_one > article,
+.article_two > article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.article_text > h3{
+    font-size: 1.3rem;
+}
+.article_text > p{
+    line-height: 1.6rem;
+    max-width: 400px;
+    margin: 0.6rem 0;
+    color: var(--p-color);
+}
+.article_text > p > a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+.article_text > span{
+    color: var(--orange-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+ 
+}
+
+.section_two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
+}
+.section_two > h1{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+}
+.section_two > p{
+    max-width: 800px;
+    text-align: center;
+    margin: 1rem 0;
+    color: white;
+}
+.section_two > button{
+    padding: 1rem 1.5rem;
+    color: white;
+    background-color: #ed563b;
+    border: none;
+    cursor: pointer;
+}
+.section_article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.training_class > article{
+    display: flex;
+    align-items: center;
+   font-size: 1.2rem;
+    margin: 2rem 3rem;
+    padding: 1.5rem ;
+    text-transform: capitalize;
+    cursor: pointer;
+    gap: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.training_class > article:nth-child(1){
+    color: var(--orange-color);
+}
+.training_class > button{
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    padding: 1.5rem 2rem;
+    width: 80%;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--orange-color);
+    border: none;
+    cursor: pointer;
+}
+.img_training > h1{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+.img_training > p{
+    max-width: 750px;
+    color: var(--p-color);
+    margin-bottom: 2rem;
+}
+.img_training > button{
+    padding: 0.8rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--orange-color);
+    border: none;
+    cursor: pointer;
+}
+.section_three{
+    padding: 2rem 0;
+}
+.section_four{
+    background-image: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+   
+}
+.weekdays{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    gap: 1rem;
+}
+.weekdays > h4{
+   
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.weekdays > h4:hover{
+    color: var(--orange-color);
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.grid{
+    font-size: 0.8rem;
+    border: 1px solid white;
+    padding: 2.5rem 3rem;
+    color: white;
+  
+}
+.article_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.article_container > article{
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem ;
+    border-radius: 10px;
+}
+.article_container > article > h5{
+    margin-top: 2rem;
+    color: var(--orange-color);
+}
+.article_container > article > h3{
+    margin: 1rem 0;
+}
+.article_container > article > p{
+    margin: 1rem 0;
+    color: var(--p-color);
+    line-height: 1.5rem;
+}
+.article_container > article > img{
+    width: 100%;
+}
+.article_container > article:nth-child(1) > p{
+    width: 100%;
+}
+.icons_content > i{
+   margin: 0 0.3rem;
+   transition: 0.3s all;
+   cursor: pointer;
+}
+.icons_content > i:hover{
+    color: var(--orange-color);
+}
+
+
+.section_five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+.section_five > iframe{
+    width: 50%;
+    height: 73vh ;
+    
+   
+}
+.input_container{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 3rem 0;
+}
+form{
+    background-color: white;
+    padding: 2rem;
+    
+    width: 60%;
+}
+.three_input{
+    width: 100%;
+   
+}
+.three_input > input{
+    width: 37%;
+    margin: 1rem;
+    outline: none;
+    height: 5vh;
+}
+.three_input > input:nth-child(3){
+    width: 80%;
+}
+.textarea_content{
+    width: 80%;
+    margin: 1rem;
+   
+   
+}
+.textarea_content > textarea{
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    height: 20vh;
+}
+.textarea_content > button{
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: var(--orange-color);
+    border: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width:1200px) {
+    .section_article{
+        flex-direction: column;
+    }
+    .section_five{
+       flex-direction: column;
+    }
+  
+    
+    
+    
+}
+
+@media only screen and (max-width:1000px) {
+    header > nav{
+        width: 100% ;
+    }
+    .articles{
+        flex-direction: column;
+    }
+    .training_class > article,
+    .training_class > button{
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .article_container{
+        flex-direction: column;  
+    }
+    .article_container > article{
+        width: 60%;
+    }
+   
+}
+@media only screen and (max-width:845px) {
+    nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        margin: auto;
+        
+    }
+    nav > h1{
+        font-size: 1.5rem;
+        color: black;
+
+    }
+    nav > ul{
+        display: none;
+    }
+    .barsContainer {
+        display: block;
+        font-size: 2rem;
+        color: black;
+        cursor: pointer;
+    }
+   
+    main > h1{
+        font-size: 3rem;
+    }
+
+    .training_class > article{
+        margin: 2rem auto;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .training_class > button{
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .section_two > h1{
+        font-size: 2.5rem;
+        text-align: center ;
+    }
+    .article_one > article,
+    .article_two > article{
+        margin: 3rem 1rem;
+    }
+    
+     .section_two > p{
+        max-width: 400px;
+        margin: 1rem;
+     }   
+    .img_training > img{
+        max-width: 350px;
+        margin-left: 1.5rem;
+    }
+    
+    
+     .img_training > h1,
+     .img_training > p,
+      .img_training > button{
+        margin-left: 1rem;
+     }
+     .weekdays {
+     margin: auto;
+        flex-direction: column;
+      width: 80%;
+      align-items: center;
+    
+     }
+     .weekdays > h4{
+       font-size: 1.5rem;
+       border: 1px solid white;
+       padding: 1rem 4rem;
+       width: 100%;
+      text-align: center;
+       border-radius: 30px;
+     }
+
+     .weekdays > h4:hover{
+        background-color: white;
+     }
+     .weekdays > h4:nth-child(2),
+     .weekdays > h4:nth-child(4),
+     .weekdays > h4:nth-child(6),
+     .weekdays > h4:nth-child(8){
+        display: none;
+     }
+    .grid{
+        padding: 1rem;
+    }
+    .grid_container{
+        width: 40%;
+        margin: 2rem auto 0 auto;
+    }
+
+    .article_container > article{
+     
+        width: 80%;
+    }
+
+    .section_five{
+       height: 100%;
+    }
+    .section_five > iframe{
+        height: 90vh;
+    }
+    .section_five > iframe,
+    .textarea_content{
+        width: 100%;
+    }
+    .input_container{
+        width: 100%;
+        height: 90%;
+    }
+    form{
+        margin: 2rem;
+        height: 90%;
+        width: 80%;
+    }
+    .three_input{
+        flex-direction: column
+    }
+    .three_input > input,
+    .three_input > input:nth-child(3)
+    {
+        width: 90%;
+    }
+    .three_input > input:nth-child(1){
+        margin-bottom: 1.3rem;
+    }
+    
+    .textarea_content > textarea{
+        width: 90%;
+    }
+    footer{
+        text-align: center ;
+        line-height: 1.5rem;
+    }
+
+
+}
